@@ -1,0 +1,363 @@
+/* #region strona */
+@font-face {
+    font-family: Gwent;
+    src: url('fonts/Gwent');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Gwent";
+}
+
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-heading{
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+
+/* #endregion strona */
+
+
+
+
+/* #region navbar */
+
+#navbar{
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    box-shadow: 0 10px 10px -5px rgb(0, 0, 0, 0.1);
+}
+
+#navbar ul{
+    display: flex;
+    margin: 10px 0 10px auto;
+    width: 55%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#navbar ul li a{
+    margin-left: 3px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a:hover{
+    color: lightgreen;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+/* #endregion  */
+
+
+
+/* #region intro&welcome*/
+
+#intro{
+    height: 300px;
+    background-image: url("../images/wallpaper/geralt_zimno_cut.jpg");
+    background-size: cover;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.message img{
+    max-height: 300px;
+}
+
+.message .text{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+/* #endregion */
+
+
+/* #region squad */
+
+#squad{
+    background-color: black;
+    color: aliceblue;
+}
+
+.squad-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.player-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px 25px;
+}
+
+
+.player-container img{
+    max-width: 180px;
+    margin-bottom: -70px;
+    border-radius: 15px;
+    border: 4px aliceblue solid;
+}
+
+.player-container p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.player-container:hover{
+    color: aquamarine;
+    transform: scale(1.07);
+    transition: all 0.5s;
+}
+
+.player-container img:hover{
+    border-color: aquamarine;
+    transition: all 0.5s;
+
+}
+
+/* #endregion  */
+
+
+/* #region results */
+
+#results{
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.latest-result{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 70%;
+    color: aliceblue;
+    background-color: black;
+    justify-items: center;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+
+.latest-result:hover{
+    color: aquamarine;
+    transform: scale(1.07);
+    transition: all 0.5s;
+}
+
+.latest-result img{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.latest-result .text{
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.other-results-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.other-result{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.left{
+    margin-right: auto;
+}
+
+.right{
+    margin-left: auto;
+}
+
+.other-result:hover{
+    color: aquamarine;
+    transform: scale(1.07);
+    transition: all 0.5s;
+}
+
+.other-result .text{
+    font-size: 2rem;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+/* #endregion  */
+
+
+
+/* #region meta */
+
+#meta{
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.tier-container{
+    width: 80%;
+    margin: 30px auto 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tiername{
+    font-size: 3.5rem;
+    text-align: center;
+    text-decoration-color: aquamarine;
+}
+
+.tier{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    margin: 10px;
+}
+
+.tier1{
+    background-image: url("../images/wallpaper/flaminica.jpg");
+    background-size: cover;
+}
+
+.tier2{
+    background-image: url("../images/wallpaper/yenn-journey.jfif");
+    background-size: cover;
+}
+
+.tier3{
+    background-image: url("../images/wallpaper/triss-journey.jfif");
+    background-size: cover;
+}
+
+.deck{
+    width: 60%;
+    margin: 10px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: 1px 3px aliceblue;
+    border-style: double;
+}
+
+.deck-link{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 10px auto;
+    color: aliceblue;
+}
+
+.sy{
+    background-image: url("../images/faction-background/sy.png");
+}
+.sk{
+    background-image: url("../images/faction-background/sk.png");
+}
+.sc{
+    background-image: url("../images/faction-background/sc.png");
+}
+.ng{
+    background-image: url("../images/faction-background/ng.png");
+}
+.nr{
+    background-image: url("../images/faction-background/nr.png");
+}
+.mo{
+    background-image: url("../images/faction-background/mo.png");
+}
+
+.deck:hover{
+    transform: scale(1.04);
+    transition: all 0.5s;
+    border-color: aquamarine;
+}
+
+.deck-link:hover{
+    color: aquamarine;
+    transition: 0.5s;
+}
+
+/* #endregion  */
+
+/* #region contact */
+
+#contact{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 30px 0 100px 0;
+    font-size: 2rem;
+}
+
+
+#contact a{
+    text-decoration: none;  
+    color: black; 
+    margin-right: 10px; 
+}
+
+#contact a:hover{
+    color: aquamarine;
+}
+
+/* #endregion  */
